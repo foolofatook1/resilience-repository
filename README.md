@@ -13,3 +13,11 @@ TODO:
 	- 250 word artist statement / abstract
 	- works cited
 - Make a sticky note header at the top of every page.
+
+TIMELINE:
+=========
+
+- Next week uploading actual creative work.
+- Friday get Abstracts
+- All done by 12/15/2020 -- done / yet tweakable
+- Share event 12/14/2020 -- presentable 
