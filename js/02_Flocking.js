@@ -13,16 +13,18 @@ let W;
 let H;
 let notes = [];
 let colors = ['chartreuse', 'turquoise', 'hotpink', 'orange'];
-let proj_names = ['Least Concern',
-			 'iPhone',
-			 'Card Catalog',
-			 'Lonesome George',
-			 'Kariba Dam',
-			 'Seed Archive',
-			 '/resilience-repository/projects/proj6.html',
-			 '/resilience-repository/projects/proj7.html',
-			 '/resilience-repository/projects/proj8.html',
-			 '/resilience-repository/projects/proj9.html']
+let hover_color = ['lightgreen', 'lightblue', 'pink', 'yellow'];
+let proj_names = ['<center>Least<br>Concern</center>',
+			 '<center>iPhone</center>',
+			 '<center>Card<br>Catalog</center>',
+			 '<center>Lonesome<br>George</center>',
+			 '<center>Kariba<br>Dam</center>',
+			 '<center>Seed<br>Archive</center>',
+			 '<center>Kiribati</center>',
+			 '<center>Giant<br>Panda</center>',
+			 '<center>Garlic<br>mustard</center>',
+			 '<center>Eastern<br>timber<br>wolf</center>'];
+let fill_color;
 			 
 let links = [];
 
@@ -82,9 +84,10 @@ function setupNotes() {
 	let rectH = H/10;
 	let color = colors [1];
 	for(let i = 0; i < 10; i++) {
-		notes[i] = new Note(rectX, rectY, rectW, rectH, color=colors[i%4], 
+		notes[i] = new Note(rectX, rectY, rectW, rectH, 
+							color = colors[i%4],
 							link=links[i]);
-		notes[i].link.position(rectX+rectW/2, rectY+rectH/2);
+		notes[i].link.position(rectX+rectW/5, rectY+rectH/3);
 		rectX+=rectW+3;
 	}
 }
@@ -92,12 +95,7 @@ function setupNotes() {
 // sets up links !ONLY TO BE CALLED ONCE!
 function setupLinks() {
 	for(let i = 0; i < 10; i++) {
-		if(i%10 == 0){
-			 links[i] = createA('/resilience-repository/projects/proj'+i+'.html', 'Panda');
-		}
-		else {
-			links[i] = createA('/resilience-repository/projects/proj'+i+'.html', 'proj'+i);
-		}
+		links[i] = createA('/resilience-repository/projects/proj'+i+'.html', proj_names[i]);
 	}
 }
 

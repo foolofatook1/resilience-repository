@@ -3,17 +3,17 @@
 TODO:
 =====
 
-- center text in sticky notes
-- make sticky notes change color on hover
-- stylize text: nunito sans, make gray in resilience repository
-- Add: "Click anywhere on the window to add to the flock." under the sticky notes. 
-- Change sticky note names to project names.
+- center text in sticky notes [x]
+- make sticky notes change color on hover [ ]
+- stylize text: nunito sans, make gray in resilience repository [x]
+- Add: "Click anywhere on the window to add to the flock." under the sticky notes. [ ]
+- Change sticky note names to project names. [x]
 - Every website will have:
-	- 'project-name' team
-	- 250 word artist statement / abstract
-	- works cited
-- Make a sticky note header at the top of every page.
-- Make the lower slightly larget sticky about button.
+	- 'project-name' team [ ]
+	- 250 word artist statement / abstract [ ]
+	- works cited [ ]
+- Make a sticky note header at the top of every page. [ ]
+- Make the lower slightly larget sticky about button. [ ]
 
 TIMELINE:
 =========
