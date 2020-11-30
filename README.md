@@ -13,6 +13,7 @@ TODO:
 	- 250 word artist statement / abstract
 	- works cited
 - Make a sticky note header at the top of every page.
+- Make the lower slightly larget sticky about button.
 
 TIMELINE:
 =========
