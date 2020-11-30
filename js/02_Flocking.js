@@ -9,28 +9,108 @@
 
 
 let flock;
+let W;
+let H;
+let notes = [];
+let colors = ['chartreuse', 'turquoise', 'hotpink', 'orange'];
+let proj_names = ['Least Concern',
+			 'iPhone',
+			 'Card Catalog',
+			 'Lonesome George',
+			 'Kariba Dam',
+			 'Seed Archive',
+			 '/resilience-repository/projects/proj6.html',
+			 '/resilience-repository/projects/proj7.html',
+			 '/resilience-repository/projects/proj8.html',
+			 '/resilience-repository/projects/proj9.html']
+			 
+let links = [];
+
 
 function setup() {
-  bg = loadImage('/resilience-repository/media/HomepageDRAFT.jpg');
-  createCanvas(windowWidth, windowHeight);
+  W=windowWidth-windowWidth/30;
+  H=windowHeight-windowHeight/30;
+  bg = loadImage('/resilience-repository/media/Homepagetest4.jpg');
+
+  setupLinks(); // instantiate list of links
 
   flock = new Flock();
   // Add an initial set of boids into the system
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 100; i++) {
     let b = new Boid(width / 2,height / 2);
     flock.addBoid(b);
   }
 }
 
 function draw() {
+  W=windowWidth-windowWidth/30; // modular padding
+  H=windowHeight-windowHeight/30;
+  createCanvas (W, H);
   background(bg);
+
+  // draw sticky notes 
+  drawNotes();
+
   flock.run();
 }
 
-// function for adjust window + canvas size
-function windowResized() {
-	resizeCanvas(windowWidth, windowHeight, true);
+/**
+ * Functions for drawing clickable link
+ * sticky notes.
+ * START
+ **/
+
+function Note(x, y, w, h, color, link) {
+	this.x = x;
+	this.y = y;
+	this.w = w;
+	this.h = h;
+	this.color = color;
+	this.link = link;
 }
+
+Note.prototype.draw = function() {
+	noStroke();
+	fill(this.color);
+	rect(this.x, this.y, this.w, this.h);
+}
+
+function setupNotes() {
+	let rectX = W/4;
+	let rectY = H-H/3.5;
+	let rectW = W/15;
+	let rectH = H/10;
+	let color = colors [1];
+	for(let i = 0; i < 10; i++) {
+		notes[i] = new Note(rectX, rectY, rectW, rectH, color=colors[i%4], 
+							link=links[i]);
+		notes[i].link.position(rectX+rectW/2, rectY+rectH/2);
+		rectX+=rectW+3;
+	}
+}
+
+// sets up links !ONLY TO BE CALLED ONCE!
+function setupLinks() {
+	for(let i = 0; i < 10; i++) {
+		if(i%10 == 0){
+			 links[i] = createA('/resilience-repository/projects/proj'+i+'.html', 'Panda');
+		}
+		else {
+			links[i] = createA('/resilience-repository/projects/proj'+i+'.html', 'proj'+i);
+		}
+	}
+}
+
+function drawNotes() {
+	setupNotes();
+	for(let i = 0; i < 10; i++) {
+		notes[i].draw();
+	}
+}
+
+/**
+ * END
+ **/
 
 // Add a new boid into the System
 function mouseDragged() {
@@ -230,5 +310,4 @@ Boid.prototype.cohesion = function(boids) {
     return createVector(0, 0);
   }
 }
-
 
