@@ -4,9 +4,9 @@ TODO:
 =====
 
 - center text in sticky notes [x]
-- make sticky notes change color on hover [ ]
+- make sticky notes change color on hover [x]
 - stylize text: nunito sans, make gray in resilience repository [x]
-- Add: "Click anywhere on the window to add to the flock." under the sticky notes. [ ]
+- Add: "Click anywhere on the window to add to the flock." under the sticky notes. [x]
 - Change sticky note names to project names. [x]
 - Every website will have:
 	- 'project-name' team [ ]

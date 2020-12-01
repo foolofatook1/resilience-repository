@@ -13,7 +13,7 @@ let W;
 let H;
 let notes = [];
 let colors = ['chartreuse', 'turquoise', 'hotpink', 'orange'];
-let hover_color = ['lightgreen', 'lightblue', 'pink', 'yellow'];
+let hover_colors = ['lightgreen', 'lightblue', 'pink', 'yellow'];
 let proj_names = ['<center>Least<br>Concern</center>',
 			 '<center>iPhone</center>',
 			 '<center>Card<br>Catalog</center>',
@@ -53,6 +53,14 @@ function draw() {
   // draw sticky notes 
   drawNotes();
 
+  // add prompt to draw boids under sticky notes
+  textSize(width / 50);
+  textAlign(CENTER);
+  fill('#666');
+  text('Click anywhere in the window to add to the flock.', W/2, H-H/16);
+
+
+
   flock.run();
 }
 
@@ -85,11 +93,16 @@ function setupNotes() {
 	let color = colors [1];
 	for(let i = 0; i < 10; i++) {
 		notes[i] = new Note(rectX, rectY, rectW, rectH, 
-							color = colors[i%4],
-							link=links[i]);
+							color=colorCheck(rectX, rectY, rectW, rectH, i), link=links[i]);
 		notes[i].link.position(rectX+rectW/5, rectY+rectH/3);
 		rectX+=rectW+3;
 	}
+}
+
+function colorCheck(x, y, w, h, i) {
+	let d = dist(mouseX, mouseY, x+w/2, y+h/2);
+	if(d < 25) { return hover_colors[i%4]; }
+	else { return colors[i%4]; }
 }
 
 // sets up links !ONLY TO BE CALLED ONCE!

@@ -6,3 +6,7 @@ a {
 	color: #666;
 	text-decoration: none;
 }
+
+a:hover {
+	font-weight: bold;
+}
