@@ -10,19 +10,24 @@
 		<link rel="stylesheet" href="/resilience-repository/css/style.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+		<script src="/resilience-repository/js/includeHTML.js"></script>
 	</head>
 	<body>
+
+		<div w3-include-html="/resilience-repository/header.html"></div>
+
 		<center>
-			<a href='/resilience-repository/index.html'>go back</a>
 			<br>
 			<!--<iframe src="https://player.vimeo.com/video/485108284" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
 			<video width="75%" height="75%" controls>
 				<source src="/resilience-repository/media/RRpanda_test.mp4" type="video/mp4">
 			</video>
 			<p><a href="https://vimeo.com/485108284">Resilience Repository (panda test)</a> from <a href="https://vimeo.com/experimentalhumanities">Experimental Humanities</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-			<br>
-			<a href='/resilience-repository/index.html'>go back</a>
 		</center>
+
+		<script>
+			includeHTML();
+		</script>
 
 	</body>
 </html>

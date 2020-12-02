@@ -17,15 +17,19 @@ a:hover {
 }
 
 /* colored column header */
-#g {
+.gr {
 	background-color: chartreuse;
 }
-#t {
+.tq {
 	background-color: turquoise;
 }
-#p {
+.hp {
 	background-color: hotpink;
 }
-#o {
+.or {
 	background-color: orange;
+}
+
+th {
+	padding: 25px;
 }

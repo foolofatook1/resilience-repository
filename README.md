@@ -12,8 +12,8 @@ TODO:
 	- 'project-name' team [ ]
 	- 250 word artist statement / abstract [ ]
 	- works cited [ ]
-- Make a sticky note header at the top of every page. [ ]
-- Make the lower slightly larget sticky about button. [ ]
+- Make a sticky note header at the top of every page. [x]
+- Make the lower slightly larger sticky about button. [ ]
 
 * Get student consent for displaying work! [ ] 
 
