@@ -10,3 +10,22 @@ a {
 a:hover {
 	font-weight: bold;
 }
+
+/* header */
+.header {
+	text-align: center;
+}
+
+/* colored column header */
+#g {
+	background-color: chartreuse;
+}
+#t {
+	background-color: turquoise;
+}
+#p {
+	background-color: hotpink;
+}
+#o {
+	background-color: orange;
+}

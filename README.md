@@ -15,6 +15,8 @@ TODO:
 - Make a sticky note header at the top of every page. [ ]
 - Make the lower slightly larget sticky about button. [ ]
 
+* Get student consent for displaying work! [ ] 
+
 TIMELINE:
 =========
 
