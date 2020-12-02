@@ -17,6 +17,16 @@ a:hover {
 	text-align: center;
 }
 
+/* for header image */
+.header-img {
+	width: 100%;
+	height: 50px;
+	background-image: url('/resilience-repository/media/Homepagetest_headerbar.jpg');
+	background-size: cover;
+	background-position: center bottom;
+}
+
+
 /* colored column header */
 .gr {
 	background-color: chartreuse;

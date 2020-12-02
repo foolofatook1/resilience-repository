@@ -14,25 +14,23 @@ let H;
 let notes = [];
 let colors = ['chartreuse', 'turquoise', 'hotpink', 'orange'];
 let hover_colors = ['lightgreen', 'lightblue', 'pink', 'yellow'];
-let proj_names = ['<center>Least<br>Concern</center>',
-			 '<center>iPhone</center>',
-			 '<center>Card<br>Catalog</center>',
-			 '<center>Lonesome<br>George</center>',
-			 '<center>Kariba<br>Dam</center>',
-			 '<center>Seed<br>Archive</center>',
-			 '<center>Kiribati</center>',
-			 '<center>Giant<br>Panda</center>',
-			 '<center>Garlic<br>mustard</center>',
-			 '<center>Eastern<br>timber<br>wolf</center>'];
-let fill_color;
-			 
+let proj_names = ['LEAST<br>CONCERN',
+			 'IPHONE',
+			 'CARD<br>CATALOG',
+			 'LONESOME<br>GEORGE',
+			 'KARIBA<br>DAM',
+			 'SEED<br>ARCHIVE',
+			 'KIRIBATI',
+			 'GIANT<br>PANDA',
+			 'GARLIC<br>MUSTARD',
+			 'EASTERN<br>TIMBER<br>WOLF'];
 let links = [];
 
 
 function setup() {
   W=windowWidth-windowWidth/30;
   H=windowHeight-windowHeight/30;
-  bg = loadImage('/resilience-repository/media/Homepagetest4.jpg');
+  bg = loadImage('/resilience-repository/media/Homepagetes5.jpg');
 
   setupLinks(); // instantiate list of links
 
@@ -90,11 +88,14 @@ function setupNotes() {
 	let rectY = H-H/3.5;
 	let rectW = W/15;
 	let rectH = H/10;
-	let color = colors [1];
+	let color;
 	for(let i = 0; i < 10; i++) {
 		notes[i] = new Note(rectX, rectY, rectW, rectH, 
 							color=colorCheck(rectX, rectY, rectW, rectH, i), link=links[i]);
-		notes[i].link.position(rectX+rectW/5, rectY+rectH/3);
+
+		let wordLen=textWidth(notes[i].link);
+		notes[i].link.position(rectX+(wordLen)-(rectW/2), rectY+rectH/2);
+		notes[i].link.style('text-align:center');
 		rectX+=rectW+3;
 	}
 }
