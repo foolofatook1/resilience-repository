@@ -5,6 +5,7 @@ body {
 a {
 	color: #666;
 	text-decoration: none;
+	font-weight: normal;
 }
 
 a:hover {
@@ -33,3 +34,4 @@ a:hover {
 th {
 	padding: 25px;
 }
+
