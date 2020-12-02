@@ -54,10 +54,10 @@ function draw() {
   drawNotes();
 
   // add prompt to draw boids under sticky notes
-  textSize(width / 50);
+  textSize(width / 60);
   textAlign(CENTER);
   fill('#666');
-  text('Click anywhere in the window to add to the flock.', W/2, H-H/16);
+  text('Click and drag anywhere in the window to add to the flock.', W/2, H-H/16);
 
 
 

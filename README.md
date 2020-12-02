@@ -3,7 +3,7 @@
 TODO:
 =====
 
-- center text in sticky notes [x]
+- center text in sticky notes [ ]
 - make sticky notes change color on hover [x]
 - stylize text: nunito sans, make gray in resilience repository [x]
 - Add: "Click anywhere on the window to add to the flock." under the sticky notes. [x]
@@ -12,7 +12,8 @@ TODO:
 	- 'project-name' team [ ]
 	- 250 word artist statement / abstract [ ]
 	- works cited [ ]
-- Make a sticky note header at the top of every page. [x]
+- See if you can make each table square the same exact size. [ ]
+- Add gray line image to header. [ ]
 - Make the lower slightly larger sticky about button. [ ]
 
 * Get student consent for displaying work! [ ] 
