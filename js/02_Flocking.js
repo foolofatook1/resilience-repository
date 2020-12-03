@@ -15,12 +15,12 @@ let notes = [];
 let colors = ['chartreuse', 'turquoise', 'hotpink', 'orange'];
 let hover_colors = ['lightgreen', 'lightblue', 'pink', 'yellow'];
 let proj_names = ['LEAST<br>CONCERN',
-			 'IPHONE',
+			 'IPHONE<br>',
 			 'CARD<br>CATALOG',
 			 'LONESOME<br>GEORGE',
 			 'KARIBA<br>DAM',
 			 'SEED<br>ARCHIVE',
-			 'KIRIBATI',
+			 'KIRIBATI<br>',
 			 'GIANT<br>PANDA',
 			 'GARLIC<br>MUSTARD',
 			 'EASTERN<br>TIMBER<br>WOLF'];
@@ -92,13 +92,23 @@ function setupNotes() {
 	for(let i = 0; i < 10; i++) {
 		notes[i] = new Note(rectX, rectY, rectW, rectH, 
 							color=colorCheck(rectX, rectY, rectW, rectH, i), link=links[i]);
-
-		let wordLen=textWidth(notes[i].link);
-		notes[i].link.position(rectX+(wordLen)-(rectW/2), rectY+rectH/2);
+		let fwl=getFirstWordLength(proj_names[i]);	
+		notes[i].link.position(((rectX+(rectW/2))-(fwl/2)), rectY+rectH/2);
 		notes[i].link.style('text-align:center');
 		rectX+=rectW+3;
 	}
 }
+
+function getFirstWordLength(string) {
+	let i = 0;
+	let newWord = [];
+	while(string[i] != '<') {
+		newWord[i] = string[i];
+		i++;
+	}
+	return textWidth(newWord);
+}
+		
 
 function colorCheck(x, y, w, h, i) {
 	let d = dist(mouseX, mouseY, x+w/2, y+h/2);

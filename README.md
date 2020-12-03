@@ -3,7 +3,8 @@
 TODO:
 =====
 
-- center text in sticky notes [.5x]
+- center text in sticky notes [ ]
+- Make mobile compat as well! [ ]
 - make sticky notes change color on hover [x]
 - stylize text: nunito sans, make gray in resilience repository [x]
 - Add: "Click anywhere on the window to add to the flock." under the sticky notes. [x]
