@@ -3,7 +3,7 @@
 TODO:
 =====
 
-- center text in sticky notes [ ]
+- center text in sticky notes [x]
 - Make mobile compat as well! [ ]
 - make sticky notes change color on hover [x]
 - stylize text: nunito sans, make gray in resilience repository [x]

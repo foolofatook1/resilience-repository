@@ -89,12 +89,18 @@ function setupNotes() {
 	let rectW = W/15;
 	let rectH = H/10;
 	let color;
+	let linkX;
+	let linkY;
+	let fwl; /* first word length */
 	for(let i = 0; i < 10; i++) {
 		notes[i] = new Note(rectX, rectY, rectW, rectH, 
 							color=colorCheck(rectX, rectY, rectW, rectH, i), link=links[i]);
-		let fwl=getFirstWordLength(proj_names[i]);	
-		notes[i].link.position(((rectX+(rectW/2))-(fwl/2)), rectY+rectH/2);
-		notes[i].link.style('text-align:center');
+		fwl=getFirstWordLength(proj_names[i]);	
+		notes[i].link.style('font-size: '+ (rectW) + '%;'); 
+		linkX = rectX + (rectW/6)
+		linkY = rectY + rectH/3;
+		notes[i].link.position(linkX, linkY);
+		// notes[i].link.size(rectW, rectH);
 		rectX+=rectW+3;
 	}
 }
@@ -106,7 +112,7 @@ function getFirstWordLength(string) {
 		newWord[i] = string[i];
 		i++;
 	}
-	return textWidth(newWord);
+	return (textWidth(newWord)-textWidth(newWord[0])-textWidth(newWord[1]));
 }
 		
 
