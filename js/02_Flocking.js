@@ -12,8 +12,8 @@ let flock;
 let W;
 let H;
 let notes = [];
-let colors = ['chartreuse', 'turquoise', 'hotpink', 'orange'];
-let hover_colors = ['lightgreen', 'lightblue', 'pink', 'yellow'];
+let colors = ['chartreuse', 'turquoise', 'orange', 'hotpink'];
+let hover_colors = ['lightgreen', 'lightblue', 'yellow', 'pink'];
 let proj_names = ['LEAST<br>CONCERN',
 			 'IPHONE<br>',
 			 'CARD<br>CATALOG',
@@ -23,7 +23,8 @@ let proj_names = ['LEAST<br>CONCERN',
 			 'KIRIBATI<br>',
 			 'GIANT<br>PANDA',
 			 'GARLIC<br>MUSTARD',
-			 'EASTERN<br>TIMBER<br>WOLF'];
+			 'EASTERN<br>TIMBER<br>WOLF',
+			 'ABOUT<br>'];
 let links = [];
 
 
@@ -92,12 +93,16 @@ function setupNotes() {
 	let linkX;
 	let linkY;
 	let fwl; /* first word length */
-	for(let i = 0; i < 10; i++) {
+	for(let i = 0; i < 11; i++) {
+		if(i == 10) {
+			rectX = W/2.5;
+			rectY = H-H/2.25;
+		}
 		notes[i] = new Note(rectX, rectY, rectW, rectH, 
 							color=colorCheck(rectX, rectY, rectW, rectH, i), link=links[i]);
 		fwl=getFirstWordLength(proj_names[i]);	
 		notes[i].link.style('font-size: '+ (rectW) + '%;'); 
-		linkX = rectX + (rectW/6)
+		linkX = rectX + (rectW/6);
 		linkY = rectY + rectH/3;
 		notes[i].link.position(linkX, linkY);
 		// notes[i].link.size(rectW, rectH);
@@ -124,14 +129,14 @@ function colorCheck(x, y, w, h, i) {
 
 // sets up links !ONLY TO BE CALLED ONCE!
 function setupLinks() {
-	for(let i = 0; i < 10; i++) {
+	for(let i = 0; i < 11; i++) {
 		links[i] = createA('/resilience-repository/projects/proj'+i+'.html', proj_names[i]);
 	}
 }
 
 function drawNotes() {
 	setupNotes();
-	for(let i = 0; i < 10; i++) {
+	for(let i = 0; i < 11; i++) {
 		notes[i].draw();
 	}
 }
