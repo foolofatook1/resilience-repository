@@ -15,15 +15,14 @@ a:hover {
 /* header */
 table.header {
 	text-align: center;
-	/*background-image: url('resilience-repository/media/Homepagetest_headerbar.jpg');*/
 	width: 100%;
 	height: 0;
-	padding: 0 0 40%;
-	/* background-size: 100%;*/
+	padding: 0 0 6%;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto;*?
 }
 
 /* for header image */
