@@ -15,7 +15,7 @@ TODO:
 	- works cited [x]
 - See if you can make each table square the same exact size. [ ]
 - Add gray line image to header. [x]
-- Make the lower slightly larger sticky about button. [ ]
+- Make the lower slightly larger sticky about button. [x]
 
 * Get student consent for displaying work! [x] <-- in syllabus
 
