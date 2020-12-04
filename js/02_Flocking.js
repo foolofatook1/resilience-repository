@@ -130,7 +130,12 @@ function colorCheck(x, y, w, h, i) {
 // sets up links !ONLY TO BE CALLED ONCE!
 function setupLinks() {
 	for(let i = 0; i < 11; i++) {
-		links[i] = createA('/resilience-repository/projects/proj'+i+'.html', proj_names[i]);
+		if(i == 10) { 
+			links[i] = createA('/resilience-repository/about.html', proj_names[i]);
+		}
+		else {
+			links[i] = createA('/resilience-repository/projects/proj'+i+'.html', proj_names[i]);
+		}
 	}
 }
 
