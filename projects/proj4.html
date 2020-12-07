@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">	
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | OMG</title>
+    <link rel="shortcut icon" href="/resilience-repository/projects/proj4Stuff/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="/resilience-repository/css/style.css">
+	<link rel="stylesheet" href="/resilience-repository/projects/proj4Stuff/TemplateData/style.css">
+    <script src="/resilience-repository/projects/proj4Stuff/TemplateData/UnityProgress.js"></script>
+    <script src="/resilience-repository/projects/proj4Stuff/Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "/resilience-repository/projects/proj4Stuff/Build/KaribaDam.json", {onProgress: UnityProgress});
+    </script>
+	<script src="/resilience-repository/js/includeHTML.js"></script>
+  </head>
+  <body>
 
-		<title>Resilience Repository</title>
+ 	<div w3-include-html="/resilience-repository/header.html"></div> 	
+	<h3><u>Kariba Dam Team</u></h3>
+	<center>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px;"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">OMG</div>
+      </div>
+    </div>
+	</center>
+	<br>
+	<h3><u>Project Statement</u></h3>
+	<h3><u>Works Cited</u></h3>
+	<script>
+		includeHTML();
+	</script>
 
-		<link rel="stylesheet" href="/resilience-repository/css/style.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
-		<script src="/resilience-repository/js/includeHTML.js"></script>
-	</head>
-	<body>
-
-		<div w3-include-html="/resilience-repository/header.html"></div>
-
-		<br>
-		<h3>
-		<u>Kariba Dam Team</u>
-		</h3>
-		<h3>
-		<u>Project Statement</u>
-		</h3>
-		<h3>
-		<u>Works Cited</u>
-		</h3>
-
-
-
-
-
-		<script>
-			includeHTML();
-		</script>
-
-	</body>
+  </body>
 </html>
