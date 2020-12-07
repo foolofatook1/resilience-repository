@@ -3,8 +3,8 @@
 TODO:
 =====
 
-- center text in sticky notes [x]
-- Make mobile compat as well! [ ]
+- Fix 'About' sticky note positioning and center text better for all sticky notes. [ ]
+- !!!Make mobile compat as well!!! <-- Still of on mobile. [ ]
 - make sticky notes change color on hover [x]
 - stylize text: nunito sans, make gray in resilience repository [x]
 - Add: "Click anywhere on the window to add to the flock." under the sticky notes. [x]
@@ -15,9 +15,13 @@ TODO:
 	- works cited [x]
 - See if you can make each table square the same exact size. [ ]
 - Add gray line image to header. [x]
-- Make the lower slightly larger sticky about button. [x]
 
 * Get student consent for displaying work! [x] <-- in syllabus
+
+proj7
+=====
+- decrease padding on top of video [ ]
+- line up text with the margins of the video [ ]   
 
 TIMELINE:
 =========
