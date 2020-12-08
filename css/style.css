@@ -2,6 +2,19 @@ body {
 	font-family: 'Nunito Sans', sans-serif;
 }
 
+.column {
+	max-width: 50%;
+	margin-left: 1%;
+}
+
+.garlicBody {
+	load-image: url('/resilience-repository/media/garlic_bkg.jpg');
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 a {
 	color: #666;
 	text-decoration: none;

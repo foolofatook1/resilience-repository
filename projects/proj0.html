@@ -11,7 +11,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
 		<script src="/resilience-repository/js/includeHTML.js"></script>
-		<script src="/resilience-repository/js/checkCoords.js"></script>
+		<!--<script src="/resilience-repository/js/checkCoords.js"></script>-->
+		<script src="/resilience-repository/js/imageMapResizer.min.js"></script>
 	</head>
 	<body>
 		
@@ -21,10 +22,13 @@
 		<img src="/resilience-repository/media/Homepage.png" width="100%" usemap="#lc_map">	
 
 		<map name="lc_map">
-			<area shape="poly" coords="95,0, 525,0, 660,610, 260,700" 
+			<area shape="poly" coords="140,0, 700,0, 880,810, 380,900" 
 			id="paper" href="hello.html">
-			<area shape="poly" coords="" 
+			<area shape="poly" coords="1100,180, 1300,180, 1450,900, 925,900" 
 			alt="baboon" href="hello.html">
+			<area shape="poly" coords="400,930, 1200,940, 2000,1200, 2150,1300, 
+				1300,1300, 400,1200"
+			alt="log" href="hello.html">
 		</map>
 
 		<br>
@@ -43,7 +47,7 @@
 
 		<script>
 			includeHTML();
-			checkCoords();
+			imageMapResize();
 		</script>
 
 	</body>
