@@ -3,10 +3,10 @@
 TODO:
 =====
 
-- Fix 'About' sticky note positioning and center text better for all sticky notes. [x]
 - !!!Make mobile compat as well!!! <-- Still off on mobile. [ ]
 - See if you can make each table square the same exact size. [ ]
 - line up text with the margins of the video [ ]   
+- Fix 'About' sticky note positioning and center text better for all sticky notes. [x]
 
 - make sticky notes change color on hover [x]
 - stylize text: nunito sans, make gray in resilience repository [x]
@@ -22,7 +22,7 @@ TODO:
 
 proj0 (least concern)
 =====
-- make image have clickable sections to go to collages [ ]
+- make image have clickable sections to go to collages [x]
 - front page audio [ ]
 
 proj7 (panda)
