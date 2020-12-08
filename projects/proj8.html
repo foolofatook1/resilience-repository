@@ -11,6 +11,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 		<script src="/resilience-repository/js/includeHTML.js"></script>
+		<script src="/resilience-repository/js/imageMapResizer.min.js"></script>
 	</head>
 	<body>
 
@@ -19,7 +20,17 @@
 <!--		<div class="garlicBody">
 
 		</div> -->
-		<img src="/resilience-repository/media/garlic_mustard_bkg.png" width="100%">
+		<img src="/resilience-repository/media/garlic_mustard_bkg.png" width="100%" usemap="#garlic_map">
+		<map name="garlic_map">
+			<area shape="circle" coords="100,75,50"
+			id="wigm" href="hello.html">
+			<area shape="circle" coords="95,275,50"
+			id="inv_sp" href="hello.html">
+			<area shape="circle" coords="410,75,50"
+			id="env_imp" href="hello.html">
+			<area shape="circle" coords="400,275,50"
+			id="psae" href="hello.html">
+		</map>
 
 		<div class="column">
 		<h4 style="margin-bottom: -1px;">
@@ -42,6 +53,7 @@
 
 		<script>
 			includeHTML();
+			imageMapResize();
 		</script>
 
 	</body>
