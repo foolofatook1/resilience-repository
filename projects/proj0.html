@@ -11,26 +11,39 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
 		<script src="/resilience-repository/js/includeHTML.js"></script>
+		<script src="/resilience-repository/js/checkCoords.js"></script>
 	</head>
 	<body>
 		
 		<div w3-include-html="/resilience-repository/header.html"></div>
-	
+
+
+		<img src="/resilience-repository/media/Homepage.png" width="100%" usemap="#lc_map">	
+
+		<map name="lc_map">
+			<area shape="poly" coords="95,0, 525,0, 660,610, 260,700" 
+			id="paper" href="hello.html">
+			<area shape="poly" coords="" 
+			alt="baboon" href="hello.html">
+		</map>
+
 		<br>
-		<h3>
-		<u>Least Concern Team</u>
-		</h3>
-		<h3>
-		<u>Project Statement</u>
-		</h3>
-		<h3>
+		<h4>
+		LEAST CONCERN TEAM
+		</h4>
+		<h4>
+		PROJECT STATEMENT
+		</h4>
+		<h4>
 		<u>Works Cited</u>
-		</h3>
+		</h4>
+
 
 
 
 		<script>
 			includeHTML();
+			checkCoords();
 		</script>
 
 	</body>

@@ -57,3 +57,11 @@ th {
 .column {
 	width: 100%;
 }
+
+/* for the background image for proj7. */
+/*.proj0-bkg {
+	background-image: url('/resilience-repository/media/Homepage.png');
+	background-size: contain cover;
+	/*width: 100vh;
+	height: calc(150vh - 80px);
+}*/

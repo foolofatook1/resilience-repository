@@ -95,8 +95,8 @@ function setupNotes() {
 	let fwl; /* first word length */
 	for(let i = 0; i < 11; i++) {
 		if(i == 10) {
-			rectX = W/2.5;
-			rectY = H-H/2.25;
+			rectX = W/2.48;
+			rectY = H-H/2.15;
 		}
 		notes[i] = new Note(rectX, rectY, rectW, rectH, 
 							color=colorCheck(rectX, rectY, rectW, rectH, i), link=links[i]);

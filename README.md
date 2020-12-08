@@ -3,7 +3,7 @@
 TODO:
 =====
 
-- Fix 'About' sticky note positioning and center text better for all sticky notes. [ ]
+- Fix 'About' sticky note positioning and center text better for all sticky notes. [x]
 - !!!Make mobile compat as well!!! <-- Still of on mobile. [ ]
 - make sticky notes change color on hover [x]
 - stylize text: nunito sans, make gray in resilience repository [x]
@@ -18,10 +18,15 @@ TODO:
 
 * Get student consent for displaying work! [x] <-- in syllabus
 
+proj0
+=====
+- make image have clickable sections to go to collages [ ]
+- front page audio [ ]
+
 proj7
 =====
-- decrease padding on top of video [ ]
 - line up text with the margins of the video [ ]   
+- add audio under new section [ ]
 
 TIMELINE:
 =========
