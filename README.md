@@ -5,7 +5,7 @@ TODO:
 
 - !!!Make mobile compat as well!!! <-- Still off on mobile. [ ]
 - See if you can make each table square the same exact size. [ ]
-- line up text with the margins of the video [ ]   
+- line up text with the margins of the video [x]   
 - Fix 'About' sticky note positioning and center text better for all sticky notes. [x]
 
 - make sticky notes change color on hover [x]
