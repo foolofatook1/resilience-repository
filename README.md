@@ -5,7 +5,7 @@ TODO:
 
 - !!!Make mobile compat as well!!! <-- Still off on mobile. [ ]
 - See if you can make each table square the same exact size. [ ]
-- line up text with the margins of the video [x]   
+- make margins better. [ ]   
 - Fix 'About' sticky note positioning and center text better for all sticky notes. [x]
 
 - make sticky notes change color on hover [x]
@@ -23,11 +23,34 @@ TODO:
 proj0 (least concern)
 =====
 - make image have clickable sections to go to collages [x]
+- add student names: Sophie Cashen, Griffin Joerger Emma Paxson, Jack Yu
 - front page audio [ ]
 
 proj1 (iphone)
 ==============
 - override twine code to get text underneath twine project [ ]
+- upload iphone team last names [ ]
+- images may take a while to load caption [ ]
+
+proj2 (card catalog)
+=====
+- student names: Mary Campbell, Natalie Castelan Marque, Charvez Johnson
+
+proj3 (lonesome george)
+=====
+- student names: Adam Beach, Alex Colon, Jay Greenberg
+
+proj4 (kariba dam)
+=====
+- student names: Daphne Bartkus, Lydia Douglas, Stecy Mbemba, Ruth Wallick
+
+proj5 (seed archive)
+=====
+- student names: ludovica ballou, celeste flahaven, tiffany lai
+
+proj6 (kiribati)
+=====
+- student names: moselle fredericks, rowan heinze, kylie kruger
 
 proj7 (panda)
 =====
@@ -39,6 +62,7 @@ proj8 (garlic)
 
 proj9 (wolf)
 =====
+- add full student names: vigil brandon, gabriel goering, gavin payne, grace schnapf [ ]
 - get higher res photo [ ]
 - add clickable content [ ]
 - add image slider [ ]
