@@ -7,13 +7,13 @@ body {
 	margin-left: 1%;
 }
 
-.garlicBody {
+/*.garlicBody {
 	load-image: url('/resilience-repository/media/garlic_bkg.jpg');
 	height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
+}*/
 
 a {
 	color: #666;
@@ -92,16 +92,26 @@ area:hover {
 }
 
 .modal-content {
-	margin: auto;
+	position: absolute;
+	left:25%;
 	display: block;
 	width: 80%;
+	height: 80%;
 	max-width: 700px;
 	animation-name: zoom;
 }
 
+/** modal content for garlic project **/
+#vid0 {display:none;}
+#vid1 {display:none;}
+#vid2 {display:none;}
+#vid3 {display:none;}
+
+
+
 @keyframes zoom {
 	from{transform:scale(0)}
-	to{transofrm:scale(1)}
+	to{transform:scale(1)}
 }
 
 .close {
