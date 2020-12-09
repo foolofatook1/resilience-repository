@@ -17,20 +17,24 @@
 
 		<div w3-include-html="/resilience-repository/header.html"></div>
 
-<!--		<div class="garlicBody">
-
-		</div> -->
 		<img src="/resilience-repository/media/garlic_mustard_bkg.png" width="100%" usemap="#garlic_map">
 		<map name="garlic_map">
 			<area shape="circle" coords="100,75,50"
-			id="wigm" href="hello.html">
+			id="wigm">
 			<area shape="circle" coords="95,275,50"
-			id="inv_sp" href="hello.html">
+			id="inv_sp">
 			<area shape="circle" coords="410,75,50"
-			id="env_imp" href="hello.html">
+			id="env_imp">
 			<area shape="circle" coords="400,275,50"
-			id="psae" href="hello.html">
+			id="psae">
 		</map>
+
+		<!-- video pop up? -->
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+
+			<iframe class="modal-content" id="vid0" src="https://player.vimeo.com/video/487134139" allow="autoplay; fullscreen" allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+		</div>
 
 		<div class="column">
 		<h4 style="margin-bottom: -1px;">
@@ -48,13 +52,10 @@
 		</h4>
 		</div>
 
-
-
-
+		<script src="/resilience-repository/js/modalCode.js"></script>
 		<script>
 			includeHTML();
 			imageMapResize();
 		</script>
-
 	</body>
 </html>

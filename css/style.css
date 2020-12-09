@@ -71,10 +71,58 @@ th {
 	width: 100%;
 }
 
-/* for the background image for proj7. */
-/*.proj0-bkg {
-	background-image: url('/resilience-repository/media/Homepage.png');
-	background-size: contain cover;
-	/*width: 100vh;
-	height: calc(150vh - 80px);
-}*/
+
+area:hover {
+	cursor: pointer;
+}
+
+/* stuff for video and image pop ups */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	animation-name: zoom;
+}
+
+@keyframes zoom {
+	from{transform:scale(0)}
+	to{transofrm:scale(1)}
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+	.modal-conent {
+		width: 100%;
+	}
+}
