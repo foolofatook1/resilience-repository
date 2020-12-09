@@ -25,6 +25,10 @@ proj0 (least concern)
 - make image have clickable sections to go to collages [x]
 - front page audio [ ]
 
+proj1 (iphone)
+==============
+- override twine code to get text underneath twine project [ ]
+
 proj7 (panda)
 =====
 - add audio under new section [ ]
@@ -32,6 +36,12 @@ proj7 (panda)
 proj8 (garlic)
 =====
 - need higher res image for bkg [ ]
+
+proj9 (wolf)
+=====
+- get higher res photo [ ]
+- add clickable content [ ]
+- add image slider [ ]
 
 TIMELINE:
 =========
