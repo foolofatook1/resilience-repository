@@ -23,7 +23,7 @@ TODO:
 proj0 (least concern)
 =====
 - make image have clickable sections to go to collages [x]
-- add student names: Sophie Cashen, Griffin Joerger Emma Paxson, Jack Yu
+- add student names: Sophie Cashen, Griffin Joerger Emma Paxson, Jack Yu [x]
 - front page audio [ ]
 
 proj1 (iphone)
@@ -34,23 +34,23 @@ proj1 (iphone)
 
 proj2 (card catalog)
 =====
-- student names: Mary Campbell, Natalie Castelan Marque, Charvez Johnson
+- student names: Mary Campbell, Natalie Castelan Marque, Charvez Johnson [x]
 
 proj3 (lonesome george)
 =====
-- student names: Adam Beach, Alex Colon, Jay Greenberg
+- student names: Adam Beach, Alex Colon, Jay Greenberg [x]
 
 proj4 (kariba dam)
 =====
-- student names: Daphne Bartkus, Lydia Douglas, Stecy Mbemba, Ruth Wallick
+- student names: Daphne Bartkus, Lydia Douglas, Stecy Mbemba, Ruth Wallick [x]
 
 proj5 (seed archive)
 =====
-- student names: ludovica ballou, celeste flahaven, tiffany lai
+- student names: ludovica ballou, celeste flahaven, tiffany lai [x]
 
 proj6 (kiribati)
 =====
-- student names: moselle fredericks, rowan heinze, kylie kruger
+- student names: moselle fredericks, rowan heinze, kylie kruger [x]
 
 proj7 (panda)
 =====
@@ -62,7 +62,7 @@ proj8 (garlic)
 
 proj9 (wolf)
 =====
-- add full student names: vigil brandon, gabriel goering, gavin payne, grace schnapf [ ]
+- add full student names: vigil brandon, gabriel goering, gavin payne, grace schnapf [x]
 - get higher res photo [ ]
 - add clickable content [ ]
 - add image slider [ ]
