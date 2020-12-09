@@ -29,7 +29,7 @@ proj0 (least concern)
 proj1 (iphone)
 ==============
 - override twine code to get text underneath twine project [ ]
-- upload iphone team last names [ ]
+- UPLOAD IPHONE TEAM NAMES [ ]
 - images may take a while to load caption [ ]
 
 proj2 (card catalog)
